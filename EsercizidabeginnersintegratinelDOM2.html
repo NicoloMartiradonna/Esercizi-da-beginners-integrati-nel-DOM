@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+    <input type="text" size="50">
+    <input type="submit" value="Submit">
+   </form>
+   <script type="text/javascript">
+    let link = document.querySelector("#myLink")
+    console.log(link)
+
+    if(link=="voti") {
+        link.addEventListener("click", function(voti){
+        voto.preventDefault()
+    })
+    }
+
+    function voti() {
+    let voto=prompt("Inserisci un voto: ");
+    voto=parseFloat(voto);
+
+    if(voto<6){
+        console.log("Il voto è insufficiente");
+    }
+    else if(voto>=6 && voto<=6.9){
+        console.log("Il voto è sufficiente");
+    }
+    else if(voto>=7 && voto<=7.9){
+        console.log("Il voto è discreto");
+    }
+    else if(voto>=8)
+    {
+        console.log("Il voto è buono");
+    }
+}
+
+</script>
+</body>
+</html>

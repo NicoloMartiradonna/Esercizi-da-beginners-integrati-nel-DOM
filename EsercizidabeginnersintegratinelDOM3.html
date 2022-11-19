@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+    <input type="text" size="50">
+    <input type="submit" value="Submit">
+   </form>
+   <script type="text/javascript">
+    let link = document.querySelector("#myLink")
+    console.log(link)
+
+
+
+    if(link=="millisecondi"){
+        link.addEventListener("click", function(millisecondi){
+        ore.preventDefault()
+        minuti.preventDefault()
+    })
+
+    function millisecondi(){
+    let ore=prompt("Inserisci il numero di ore: ");
+    let minuti=prompt("Inserisci il numero di minuti");
+
+    ore = parseInt(ore);
+    minuti = parseInt(minuti);
+    let millisecondi=(ore*60+minuti)*60*1000;
+
+    console.log(millisecondi);
+}
+</script>
+</body>
+</html>

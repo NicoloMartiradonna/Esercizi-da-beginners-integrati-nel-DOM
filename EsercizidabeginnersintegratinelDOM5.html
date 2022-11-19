@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+    <input type="text" size="50">
+    <input type="submit" value="Submit">
+   </form>
+   <script type="text/javascript">
+    let link = document.querySelector("#myLink")
+    console.log(link)
+
+
+
+    if(link=="ore") {
+        link.addEventListener("click", function(ore){
+        x.preventDefault()
+        y.preventDefault()
+    })
+    }
+
+    function ore() {
+    let x=prompt("Inserisci il numero di ore: ");
+    let m=prompt("Inserisci il numero di minuti");
+
+    x = parseInt(x);
+    m = parseInt(m);
+
+    let y;
+    let c=24-x;
+    
+    y=x-6;
+    let ny=(x+c+y)%24;
+
+    y=x+7;
+    let tk=(x+c+y)%24;
+
+    y=x+1;
+    let mo=(x+c+y)%24;
+
+
+    alert(ny+"."+m);
+    alert(tk+"."+m);
+    alert(mo+"."+m);
+}
+
+</script>
+</body>
+</html>
