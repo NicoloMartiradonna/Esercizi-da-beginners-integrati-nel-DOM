@@ -1,5 +1,5 @@
 function voti() {
-    let voto= document.querySelector("[name=number]");
+    let voto= document.querySelector("[name=voto]");
     voto.value=parseFloat(voto.value);
 
     if(voto.value<6){

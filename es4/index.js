@@ -1,10 +1,9 @@
-
 function gradi() {
-let gradiFahrenheit=document.querySelector("[name=number]");
+let gradiFahrenheit = document.querySelector("[name=gradi]");
 
-gradiFahrenheit.value=parseInt(gradiFahrenheit.value);
+let numeroGradi = parseInt(gradiFahrenheit.value);
 
-let gradiCelsius=(gradiFahrenheit - 32) * 5/9;
+let gradiCelsius = (numeroGradi - 32) * 5/9;
 
-document.querySelector("#out").innerHTML=gradiCelsius.value;
+document.querySelector("#out").innerHTML = "Gradi Celsius "+gradiCelsius+"°C";
 }

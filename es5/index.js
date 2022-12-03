@@ -1,25 +1,24 @@
 
     function ore() {
-    let x=document.querySelector("[name=number]");
-    let m=document.querySelector("[name=number]");
+    let x=document.querySelector("[name=x]");
+    let m=document.querySelector("[name=m]");
 
-    x.value= parseInt(x.value);
-    m.value = parseInt(m.value);
+    let xValore = parseInt(x.value);
 
     let y;
-    let c=24-x.value;
+    let c=24-xValore;
     
-    y=x-6;
-    let ny=(x.value+c.value+y.value)%24;
+    y=xValore-6;
+    let ny=(xValore+c+y)%24;
 
-    y.value=x.value+7;
-    let tk=(x.value+c.value+y.value)%24;
+    y=xValore+7;
+    let tk=(xValore+c+y)%24;
 
-    y=x+1;
-    let mo=(x.value+c.value+y.value)%24;
+    y=xValore+1;
+    let mo=(xValore+c+y)%24;
 
 
-    document.querySelector("#out").innerHTML=(ny+"."+m);
-    document.querySelector("#out").innerHTML=(tk+"."+m);
-    document.querySelector("#out").innerHTML=(mo+"."+m);
+    document.querySelector("#outNY").innerHTML=("New York "+ny+"."+m.value);
+    document.querySelector("#outTK").innerHTML=("Tokyo "+tk+"."+m.value);
+    document.querySelector("#outMO").innerHTML=("Mosca "+mo+"."+m.value);
 }

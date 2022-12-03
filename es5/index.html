@@ -8,10 +8,18 @@
 </head>
 <body>
     <div>
-        <input type="number" size="50" name="number">
+        <p>Inserisci orario</p>
+        <label for="x">Ore</label>
+        <input type="number" size="50" name="x" value="0" min="0" max="23">
+        <br>
+        <label for="m">Minuti</label>
+        <input type="number" size="50" name="m" value="0" min="0" max="59">
+        <br>
         <input type="button" onclick="ore()" value="Submit">
     </div>
-   <p id="out"></p>
+   <p id="outNY"></p>
+   <p id="outTK"></p>
+   <p id="outMO"></p>
    <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>

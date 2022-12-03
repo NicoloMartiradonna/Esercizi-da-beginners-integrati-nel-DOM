@@ -1,6 +1,6 @@
 function calcolaremese()
 {
-    let mese = document.querySelector("[name=text]");
+    let mese = document.querySelector("[name=mese]");
     if(mese.value=="gennaio")
     {
         document.querySelector("#out").innerHTML = "Ha 31 giorni"
